@@ -220,5 +220,21 @@ ol,ul{padding-inline-start: 0;}
 a[href]:after{
 	content:" ["attr(href)"]";
 }
+
+@page {
+      
+   @top-left {
+   content: "first: " string(heading, first); 
+   }
+   @top-center {
+   content: "start: " string(heading, start); 
+   }
+    @top-right {
+    content: "last: " string(heading, last); 
+   }
+  }
+  
+h2 { string-set: heading content() }
+
 }
 
